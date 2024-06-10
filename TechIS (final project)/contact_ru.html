@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>TechIS - Онлайн Обучение</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+  </head>
+
+<body>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <h1>Techis</h1>
+                    </a>
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index_ru.html">Главная</a></li>
+                      <li class="scroll-to-section"><a href="events_ru.html">Ивенты</a></li>
+                      <li class="scroll-to-section"><a href="courses_ru.html">Курсы</a></li>
+                      <li class="scroll-to-section"><a href="team_ru.html">Наша Команда</a></li>
+                      <li class="scroll-to-section"><a href="contact_ru.html" class="active">Контакты</a></li>
+                      <li class="scroll-to-section"><a href="contact.html">RU</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Меню</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Наши курсы</span>
+                <h2>С Преподавателями TechIS Все Становится Проще</h2>
+                <p>Изо всех сил пытаетесь заинтересовать учащихся? Преподаватели TechIS расширяют возможности преподавателей с помощью передовых образовательных технологий, делая обучение увлекательным и эффективным для всех.</p>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Онлайн Обучение</span>
+                <h2>Онлайн обучение поможет вам сэкономить время</h2>
+                <p>Учитесь в любом месте и в любое время. Расширяйте свои знания, не выходя из дома или находясь в дороге. Онлайн-курсы дают вам свободу приспосабливать обучение к своей жизни, а не наоборот.</p>
+                <div class="buttons">
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play" onClick="ButtonClicked()"></i> Что такое Онлайн Обучение?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+   <h2><center>Небольшой опрос</center></h2>
+   <center><p>Мы можем помочь вам с выбором!</p></center>
+    <form id="quizForm" class="accordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Имя и Фамилия:
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#quizForm">
+                <div class="accordion-body">
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    E-mail:
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#quizForm">
+                <div class="accordion-body">
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Ваши хобби:
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#quizForm">
+                <div class="accordion-body">
+                    <input type="text" id="hobbies" name="hobbies">
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    К чему вас больше тянет?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#quizForm">
+                <div class="accordion-body">
+                    <select id="fieldOfInterest" name="fieldOfInterest" required>
+                        <option value="webDevelopment">Веб-разработка</option>
+                        <option value="appDevelopment">Разработка приложений</option>
+                        <option value="dataScience">Наука о данных</option>
+                        <option value="machineLearning">Машинное обучение</option>
+                        <option value="gameDevelopment">Разработка игр</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Базовые знания в области программирования:
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#quizForm">
+                <div class="accordion-body">
+                    <input type="text" id="basicKnowledge" name="basicKnowledge">
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Как вы узнали о TechIS?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#quizForm">
+              <div class="accordion-body">
+                <input type="text" id="techIS" name="techIS">
+              </div>
+            </div>
+          </div>
+          <center><label for="confirmPersonalInfo" class="confirmation-label">Я согласен предоставить свою личную информацию:</label>
+          <input type="checkbox" id="confirmPersonalInfo" name="confirmPersonalInfo" class="confirmation-checkbox" required><br><br></center>
+          <center><button type="submit" class="btn btn-primary">Отправить</button></center>
+        </form>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6  align-self-center">
+          <div class="section-heading">
+            <h6>Свяжитесь с нами</h6>
+            <h2>Не стесняйтесь обращаться к нам в любое время</h2>
+            <p>Благодарим вас за выбор наших шаблонов. Мы предоставляем вам лучшие CSS-шаблоны абсолютно бесплатно. Вы можете поддержать нас, поделившись нашим сайтом со своими друзьями.</p>
+            <div class="special-offer">
+              <span class="offer">акция<br><em>-50%</em></span>
+              <h6>Срок действия: <em>24 апреля 2036 года</em></h6>
+              <h4>Специальное предложение СО скидкой <em>50%</em>!</h4>
+              <a href="#"><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Ваше имя..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Ваша Почта" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Ваше Сообщение"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Отправьте сообщение прямо сейчас</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Автор: Алишер Рамазан BDA-2302</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+n0+KrDzoa8n4fYnfPkGP+KBE8gmxpCUFy+PO3H" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shC6DRsAOePDn+2lTf/nxZ+xXh9tcO7iEZwDv" crossorigin="anonymous"></script>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
